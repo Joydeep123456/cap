@@ -1,0 +1,141 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(184, 0, 0);
+}
+nav li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    color: #db0000;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #040404;
+    padding: 10px;
+}
+
+/* Styling for the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    color: WHITE;
+    left: 0;
+    width: 100%;
+    background-color: #bbcacd;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(-20px); /* Start with the menu slightly above */
+    opacity: 0; /* Hide initially */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling for the dropdown menu items */
+.dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+/* Icons */
+.dropdown-menu i {
+    margin-right: 8px;
+}
+
+/* Dropdown menu animation */
+.dropdown-menu.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+
+/* Hover effect */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transform: translateY(0); /* Slide down the menu */
+    opacity: 1; 
+}
+
+.header_search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    border-color: black;
+}
+
+.header_searchInput {
+    height: 12px;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: black;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.header_logo {
+    width: 100px;
+    object-fit: flex;
+    margin: 0 20px;
+    margin-top: 10px;
+}
+
+.header_searchIcon{
+    padding: 5px;
+    height: 22px;
+    background-color: white;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.header_optionLineOne{
+    font-size: 10px;
+}
+
+.header_optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header_optionBasket{
+    color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+}
+
+.header_basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li,a{
+    cursor: pointer;
+}
+
+
